@@ -1,0 +1,19 @@
+<h1>Create Account</h1>
+
+<div>
+  <%= form_tag(create_registration_path) do %>
+    <%= label_tag 'firstname', 'First Name' %>
+    <%= text_field_tag 'firstname' %>
+    <br/>
+    <%= label_tag 'lastname', 'Last Name' %>
+    <%= text_field_tag 'lastname' %>
+    <br/>
+    <%= label_tag 'email' %>
+    <%= email_field_tag 'email' %>
+    <br/>
+    <%= label_tag 'password' %>
+    <%= password_field_tag 'password' %>
+    <br/>
+    <%= submit_tag 'Submit' %>
+  <% end %>
+</div>
